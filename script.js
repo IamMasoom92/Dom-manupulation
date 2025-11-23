@@ -1,24 +1,24 @@
 function red() {
   let red = document.getElementById("red");
-  red.classList.add("red");
+  red.classList.toggle("red");
 }
 
 
 function blue() {
   let blue = document.getElementById("blue");
-  blue.classList.add("blue");
+  blue.classList.toggle("blue");
 }
 
 
 function green() {
   let green = document.getElementById("green");
-  green.classList.add("green");
+  green.classList.toggle("green");
 }
 
 
 function yellow() {
   let yellow = document.getElementById("yellow");
-  yellow.classList.add("yellow");
+  yellow.classList.toggle("yellow");
 }
 
 
@@ -27,3 +27,4 @@ function namedisplay() {
     const output = document.getElementById("nameoutput");
     output.textContent = "Hello, " + name;
 }
+
