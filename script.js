@@ -6,25 +6,30 @@ function red() {
 
 function blue() {
   let blue = document.getElementById("blue");
-  blue.classList.toggle("blue");
+  blue.classList.add("blue");
 }
 
 
 function green() {
   let green = document.getElementById("green");
-  green.classList.toggle("green");
+  green.classList.add("green");
 }
 
 
 function yellow() {
   let yellow = document.getElementById("yellow");
-  yellow.classList.toggle("yellow");
+  yellow.classList.add("yellow");
 }
 
 
 function namedisplay() {
     const name = document.getElementById("nameinput").value;
     const output = document.getElementById("nameoutput");
-    output.textContent = "Hello, " + name;
+    if(name){
+        output.textContent = "," + name;
+    }
+    else{
+        output.textContent ="";
+    }
 }
-
+//truthy value and falsy value
